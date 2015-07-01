@@ -1,0 +1,196 @@
+/* Base */
+
+/**
+ * Style Guide
+ *
+ * Basic utility classes.
+ * And one or two odds and ends that coule be moved elsewhere at some point.
+ */
+
+body {
+    padding-top:        0px;
+    font-family:        'Open Sans', sans-serif;
+    background-color:   @cloud;
+}
+.starter-template {
+    padding:            0px;
+    text-align:         left;
+}
+
+
+#logo {
+    padding:            15px 0px 15px 0px;
+}
+.navbar-inverse {
+    background-color:   #004B88;
+    border-color:       #080808;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color:   #003a6a;  
+    font-weight:        600;  
+}
+.navbar-inverse .navbar-nav>li>a {
+    color:              #A5BDDC;
+    padding-top:        25px; 
+    padding-bottom:     25px; 
+}
+.navbar-nav {
+    float: right;
+}
+.row {
+    margin-bottom:      (@box-padding-vertical * 1.5);
+}
+
+.row--white {
+    background-color:   @panel-default-bg;
+    margin-top:         (@box-padding-vertical * 2);
+    margin-bottom:      (@box-padding-vertical * 1.5);
+    padding:            (@paragraph-margin-bottom * 2)  (@paragraph-margin-bottom * 2) 0  (@paragraph-margin-bottom * 2);    
+}
+ol {
+}
+
+ul.navbar-nav li {
+    font-size:          @font-size-base;
+    line-height:        @line-height-base;
+    font-weight:        @font-weight-base;
+    margin:             0;
+}
+
+
+ol li, ul li {
+    font-size:          @font-size-base;
+    line-height:        @line-height-base;
+    font-weight:        @font-weight-base;
+    margin:             0 0 (@paragraph-margin-bottom / 2) 0;
+}
+/***************************************************************************
+ * Page status
+ * Badge
+ */
+.status {
+    padding: 10px 0 8px 0;
+    border-bottom: 1px solid @gray-4;
+}
+
+.alpha-badge {
+    font-weight:        @font-weight-bolder;
+    color:              @cloud;
+    background-color:   @red-brighter;
+    display:            inline-block;
+    float:              left;
+    padding:            (@paragraph-margin-bottom * 0.5);
+    margin-right:       (@paragraph-margin-bottom * 0.5);
+    margin-top:         -10px;
+    margin-bottom:      20px;
+}
+.breadcrumb {
+    background-color: @cloud;
+    margin-bottom: 0px;
+    padding: 8px 15px;
+}
+
+@media (max-width: 767px) {
+    .status p {
+        font-size: (@font-size-base * 0.8);
+    }
+    .alpha-badge {
+        margin-top:         0px;
+    }
+    .breadcrumb p {
+        font-size: (@font-size-base * 0.8);
+    }
+}
+
+/***************************************************************************
+ * Colours
+ * Swatches
+ */
+.swatch {
+    height: 110px;
+    width: 110px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: (@line-height-base * 0.5);
+    float: left;
+
+    p {
+        margin-top: 25%;
+        line-height: (@line-height-base * 0.8);
+        font-weight: @font-weight-bold;
+        font-size: (@font-size-base * 0.8);
+    }
+
+    &.swatch--brand--heritage-blue      { background-color: #004B88; color: @white; }
+    &.swatch--brand--heritage-yellow    { background-color: #FCBB69; }
+    &.swatch--brand--responsible-purple { background-color: #57486B; color: @white; }
+    &.swatch--brand--responsible-aqua   { background-color: #90CE9C; }
+    &.swatch--brand--inventive-teal     { background-color: #006278; color: @white; }
+    &.swatch--brand--inventive-pink     { background-color: #FBC0AD; }
+    &.swatch--brand--generous-green     { background-color: #00553F; color: @white; }
+    &.swatch--brand--generous-mauve     { background-color: #B5AFD7; }
+    &.swatch--product-status--alpha     { background-color: @red-brighter; color: @white; }
+    &.swatch--product-status--beta      { background-color: @beta-yellow; }
+    &.swatch--primary--text             { background-color: #00553F; color: @white; }
+    &.swatch--primary--generous-mauve   { background-color: #B5AFD7; }
+    &.swatch--extended--blue-darker         { background-color: @blue-darker; color: @white; }
+    &.swatch--extended--blue-lighter        { background-color: @blue-corporate-light; color: @black; }
+    &.swatch--extended--red                 { background-color: @red; color: @white; }
+    &.swatch--extended--red-heritage        { background-color: @red-heritage; color: @white; }
+    &.swatch--extended--red-brighter        { background-color: @red-brighter; color: @white; }
+    &.swatch--extended--red-mellow          { background-color: @red-mellow; color: @white; }
+    &.swatch--extended--purple              { background-color: @purple; color: @white; }
+    &.swatch--extended--mauve               { background-color: @mauve; color: @black; }
+    &.swatch--extended--pink                { background-color: @pink; color: @black; }
+    &.swatch--extended--peach               { background-color: @peach; color: @black; }
+    &.swatch--extended--orange              { background-color: @orange; color: @black; }
+    &.swatch--extended--yellow              { background-color: @yellow; color: @black; }
+    &.swatch--extended--green-heritage      { background-color: @green-heritage; color: @white; }
+    &.swatch--extended--green-blue          { background-color: @green-blue; color: @white; }
+    &.swatch--extended--green               { background-color: @green; color: @white; }
+    &.swatch--extended--turquoise           { background-color: @turquoise; color: @black; }
+    &.swatch--mono--black               { background-color: @black; color: @white; }
+    &.swatch--mono--gray1               { background-color: @gray-1; color: @white; }
+    &.swatch--mono--gray2               { background-color: @gray-2; color: @white; }
+    &.swatch--mono--gray3               { background-color: @gray-3; color: @black; }
+    &.swatch--mono--gray4               { background-color: @gray-4; color: @black; }
+    &.swatch--mono--gray5               { background-color: @gray-5; color: @black; }
+    &.swatch--mono--gray6               { background-color: @gray-6; color: @black; }
+    &.swatch--mono--gray7               { background-color: @gray-7; color: @black; }
+    &.swatch--mono--white               { background-color: @white; color: @black; }
+}
+
+
+/* Enhancements for style guide */
+.show-grid [class^=col-] {
+  padding:              10px;
+  background-color:     #eee;
+  background-color:     @blue-corporate-light;
+  border: 1px solid     @blue-corporate;
+}
+
+/* Form */
+.checkbox label, .radio label {
+    font-size:      @font-size-base;
+    line-height:    @line-height-base;
+    font-weight:    @font-weight-base;
+    color:          @text-color;
+    padding:        (@line-height-computed * 0.6) (@line-height-computed * 1.5);
+    background-color:   @white;
+    display: block;
+    margin:         (@line-height-computed * 0.6) 0;
+}
+
+/* Examples */
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid @gray-4;
+
+  p.lighten {
+    color: @gray-3;
+  }
+}
