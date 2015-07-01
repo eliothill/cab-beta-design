@@ -457,9 +457,10 @@ blockquote p.lighten {
   margin-right: 0.5em;
 }
 .breadcrumb {
-  background-color: #eff3f3;
-  margin-bottom: 0px;
-  padding: 8px 15px;
+  background-color: #ffffff;
+}
+.breadcrumb p {
+  font-size: 0.9em;
 }
 @media (max-width: 767px) {
   .status p {
@@ -467,9 +468,6 @@ blockquote p.lighten {
   }
   .alpha-badge {
     margin-top: 0px;
-  }
-  .breadcrumb p {
-    font-size: 0.8em;
   }
 }
 .container {
