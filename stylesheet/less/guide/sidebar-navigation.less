@@ -1,0 +1,30 @@
+/**
+ * SIDEBAR NAVIGATION.
+ *
+ * Beta sidebar navigation for content pages.
+ */
+
+.beta-navigation {
+    padding: calculated(@box-padding-vertical * 0.8);
+    h1 {
+        font-size: @font-size-base;
+        background-color: @beta-blue-light;
+        color: @heritage-blue;
+        padding: 0.2em 0.6em 0.4em 0.6em;
+        border-bottom: 0.1em solid @white;
+    }
+    ul {
+        background-color: @beta-blue-light-tint;
+        color: @text-color;
+        list-style: none;
+        padding-left: 0;
+    }
+    li {
+        font-size: @font-size-small;
+        padding: 0.2em 0.6em 0.4em 0.6em;
+        border-bottom: 0.1em solid @white;
+    }     
+    li:last-child {
+       border-bottom: none;
+    }
+}

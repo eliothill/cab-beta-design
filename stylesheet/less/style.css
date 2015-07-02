@@ -1,4 +1,379 @@
-/* eg, 20px when font size is 14px */
+/* HTML5 display definitions
+   ========================================================================== */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+
+}
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+
+  vertical-align: baseline;
+  /* 2 */
+
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+
+  font: inherit;
+  /* 2 */
+
+  margin: 0;
+  /* 3 */
+
+}
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+
+  cursor: pointer;
+  /* 3 */
+
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+
+  box-sizing: content-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
 /**
  * COLOR DEFINITIONS.
  *
@@ -22,86 +397,6 @@
 /***************************************************************************
  * HEADERS. h1, h2, etc.
  */
-/**
- * TYPE
- *
- * Styles for basic type-related styles. Headings, paragraphs, etc.
- *
- * When we use h1, h2 etc within other elements we'll probably need to
- * give them a class and assign specific sizes, margins etc to that
- * particular usage.
- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.3;
-  color: #253460;
-  margin-top: 12.5px;
-  margin-bottom: 25px;
-  font-weight: 700;
-}
-h1 {
-  font-size: 36px;
-  margin-top: 37.5px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-h4 {
-  font-size: 20px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 16px;
-}
-h1 + h2,
-h2 + h3,
-h4 + h5,
-h5 + h6 {
-  margin-top: -20px;
-}
-h3 + h4 {
-  margin-top: -15px;
-}
-p {
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 400;
-  margin: 0 0 1em 0;
-}
-b,
-strong {
-  font-weight: 600;
-}
-a {
-  color: #253460;
-  text-decoration: underline;
-}
-a:hover,
-a:focus {
-  color: #253460;
-}
-a:active {
-  color: #034ea2;
-}
-a:visited {
-  color: #253460;
-}
-hr {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-}
 /**
  * VARIABLES.
  *
@@ -153,6 +448,87 @@ hr {
 /***************************************************************************
  * FOOTER
  */
+/**
+ * TYPE
+ *
+ * Styles for basic type-related styles. Headings, paragraphs, etc.
+ *
+ * When we use h1, h2 etc within other elements we'll probably need to
+ * give them a class and assign specific sizes, margins etc to that
+ * particular usage.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+  color: #253460;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+h1 {
+  font-size: 2.3em;
+  color: #004b88;
+}
+h2 {
+  font-size: 1.8em;
+  color: #004b88;
+}
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+}
+h4 {
+  font-size: 1.2em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 1em;
+}
+h1 + h2,
+h2 + h3,
+h4 + h5,
+h5 + h6 {
+  margin-top: -0.8em;
+}
+h3 + h4 {
+  margin-top: -0.6em;
+}
+p {
+  font-size: 1em;
+  line-height: 1.7;
+  font-weight: 400;
+  margin: 0 0 1em 0;
+}
+b,
+strong {
+  font-weight: 600;
+}
+a {
+  color: #253460;
+  text-decoration: underline;
+}
+a:hover,
+a:focus {
+  color: #253460;
+}
+a:active {
+  color: #034ea2;
+}
+a:visited {
+  color: #253460;
+}
+hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 0;
+  border-top: 1px solid #cccccc;
+}
 /* Base */
 /**
  * Style Guide
@@ -200,15 +576,15 @@ body {
   padding: 2em 2em 0 2em;
 }
 ul.navbar-nav li {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 1em;
+  line-height: 1.7;
   font-weight: 400;
   margin: 0;
 }
 ol li,
 ul li {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 1em;
+  line-height: 1.7;
   font-weight: 400;
   margin: 0 0 0.5em 0;
 }
@@ -238,13 +614,13 @@ ul li {
 }
 @media (max-width: 767px) {
   .status p {
-    font-size: 12.8px;
+    font-size: 0.8em;
   }
   .alpha-badge {
     margin-top: 0px;
   }
   .breadcrumb p {
-    font-size: 12.8px;
+    font-size: 0.8em;
   }
 }
 /***************************************************************************
@@ -258,14 +634,14 @@ ul li {
   margin-bottom: 10px;
   border-radius: 10px;
   text-align: center;
-  line-height: 0.8;
+  line-height: 0.85;
   float: left;
 }
 .swatch p {
   margin-top: 25%;
-  line-height: 1.2800000000000002;
+  line-height: 1.36;
   font-weight: 600;
-  font-size: 12.8px;
+  font-size: 0.8em;
 }
 .swatch.swatch--brand--heritage-blue {
   background-color: #004B88;
@@ -419,14 +795,14 @@ ul li {
 /* Form */
 .checkbox label,
 .radio label {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 1em;
+  line-height: 1.7;
   font-weight: 400;
   color: #191926;
-  padding: 15px 37.5px;
+  padding: 0.6em 1.5em;
   background-color: #ffffff;
   display: block;
-  margin: 15px 0;
+  margin: 0.6em 0;
 }
 /* Examples */
 blockquote {
@@ -443,25 +819,26 @@ blockquote p.lighten {
  * Badge
  */
 .status {
-  padding: 2em 1em 0.5em 1em;
+  padding: 1.5em 1em 0.5em 1em;
   background-color: #ffebc6;
-  color: contrast(#ffbf47, #ffffff, #333333);
+  color: #333333;
+  vertical-align: middle;
+  margin: 0;
 }
 .alpha-badge {
   font-weight: 700;
   background-color: #ffbf47;
-  color: contrast(#ffbf47, #ffffff, #333333);
+  color: #333333;
   display: inline-block;
   float: left;
   padding: 0.5em;
   margin-right: 0.5em;
-  margin-top: -1em;
-  margin-bottom: 2em;
 }
 .breadcrumb {
-  background-color: #eff3f3;
-  margin-bottom: 0px;
-  padding: 8px 15px;
+  background-color: #ffffff;
+}
+.breadcrumb p {
+  font-size: 0.9em;
 }
 @media (max-width: 767px) {
   .status p {
@@ -470,9 +847,35 @@ blockquote p.lighten {
   .alpha-badge {
     margin-top: 0px;
   }
-  .breadcrumb p {
-    font-size: 0.8em;
-  }
+}
+/**
+ * SIDEBAR NAVIGATION.
+ *
+ * Beta sidebar navigation for content pages.
+ */
+.beta-navigation {
+  padding: calculated(8px);
+}
+.beta-navigation h1 {
+  font-size: 1em;
+  background-color: #a5bddc;
+  color: #004b88;
+  padding: 0.2em 0.6em 0.4em 0.6em;
+  border-bottom: 0.1em solid #ffffff;
+}
+.beta-navigation ul {
+  background-color: #dce5f1;
+  color: #191926;
+  list-style: none;
+  padding-left: 0;
+}
+.beta-navigation li {
+  font-size: 0.85em;
+  padding: 0.2em 0.6em 0.4em 0.6em;
+  border-bottom: 0.1em solid #ffffff;
+}
+.beta-navigation li:last-child {
+  border-bottom: none;
 }
 .container {
   margin-right: auto;
@@ -1238,163 +1641,8 @@ blockquote p.lighten {
  * Defines the colors we will use across the site.
  * This is our palette, which is used within _variables.scss and elsewhere.
  */
-/***************************************************************************
- * COLORS
- */
-/***************************************************************************
- * PRIMARY
- */
-/***************************************************************************
- * STATE COLORS.
- * Used for Alerts, Media, States and form field validation states.
- */
-/***************************************************************************
- * PRIORITY COLORS.
- * Used for Media, Priorities.
- */
-/***************************************************************************
- * HEADERS. h1, h2, etc.
- */
-/**
- * TYPE
- *
- * Styles for basic type-related styles. Headings, paragraphs, etc.
- *
- * When we use h1, h2 etc within other elements we'll probably need to
- * give them a class and assign specific sizes, margins etc to that
- * particular usage.
- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.3;
-  color: #253460;
-  margin-top: 12.5px;
-  margin-bottom: 25px;
-  font-weight: 700;
-}
-h1 {
-  font-size: 36px;
-  margin-top: 37.5px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-h4 {
-  font-size: 20px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 16px;
-}
-h1 + h2,
-h2 + h3,
-h4 + h5,
-h5 + h6 {
-  margin-top: -20px;
-}
-h3 + h4 {
-  margin-top: -15px;
-}
-p {
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 400;
-  margin: 0 0 1em 0;
-}
-b,
-strong {
-  font-weight: 600;
-}
-a {
-  color: #253460;
-  text-decoration: underline;
-}
-a:hover,
-a:focus {
-  color: #253460;
-}
-a:active {
-  color: #034ea2;
-}
-a:visited {
-  color: #253460;
-}
-hr {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-}
-/**
- * VARIABLES.
- *
- * All non-color variables.
- */
-/***************************************************************************
- * TEXT SIZES
- */
-/***************************************************************************
- * FONT WEIGHTS
- */
-/***************************************************************************
- * LINE HEIGHTS
- */
-/* eg, 20px when font size is 14px */
-/***************************************************************************
- * LINKS
- */
-/****************************************************************************
- * TABLES.
- */
-/***************************************************************************
- * PANELS
- */
-/***************************************************************************
- * FORMS
- */
-/***************************************************************************
- * PADDED BOXES.
- * Used for shaded boxes of various kinds.
- * Usually, use the .box class and modifications like .box--1, etc.
- */
-/***************************************************************************
- * REVEALERS
- */
-/***************************************************************************
- * BADGES.
- */
-/***************************************************************************
- * MENUS.
- */
-/***************************************************************************
- * LETTERS.
- */
-/***************************************************************************
- * BANNER
- * The top of page stripes.
- */
-/***************************************************************************
- * FOOTER
- */
-/* Base */
-/**
- * Style Guide
- *
- * Basic utility classes.
- * And one or two odds and ends that coule be moved elsewhere at some point.
- */
 body {
-  padding-top: 0px;
+  padding: 0;
   font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
 }
@@ -1470,61 +1718,61 @@ ul li {
 */
 .swatch.swatch--brand--beta-red {
   background-color: #b10e1e;
-  color: contrast(#b10e1e, #ffffff, #333333);
+  color: #ffffff;
 }
 .swatch.swatch--brand--beta-orange {
   background-color: #f47738;
-  color: contrast(#f47738, #ffffff, #333333);
+  color: #000000;
 }
 .swatch.swatch--brand--beta-yellow {
   background-color: #ffbf47;
-  color: contrast(#ffbf47, #ffffff, #333333);
+  color: #000000;
 }
 .swatch.swatch--brand--beta-green {
   background-color: #006435;
-  color: contrast(#006435, #ffffff, #333333);
+  color: #ffffff;
 }
 .swatch.swatch--brand--beta-light-blue {
   background-color: #a5bddc;
-  color: contrast(#a5bddc, #ffffff, #333333);
+  color: #000000;
 }
 .swatch.swatch--brand--beta-aqua {
   background-color: #81cec6;
-  color: contrast(#81cec6, #ffffff, #333333);
+  color: #000000;
 }
 /* Mono colours 
 */
 .swatch.swatch--brand--gray-0 {
   background-color: #111111;
-  color: contrast(#111111, #ffffff, #000000);
+  color: #ffffff;
 }
 .swatch.swatch--brand--gray-1 {
   background-color: #333333;
-  color: contrast(#333333, #ffffff, #000000);
+  color: #ffffff;
 }
 .swatch.swatch--brand--gray-2 {
   background-color: #666666;
-  color: contrast(#666666, #ffffff, #000000);
+  color: #ffffff;
 }
 .swatch.swatch--brand--gray-3 {
   background-color: #999999;
-  color: contrast(#999999, #ffffff, #000000);
+  color: #000000;
 }
 .swatch.swatch--brand--gray-4 {
   background-color: #cccccc;
-  color: contrast(#cccccc, #ffffff, #000000);
+  color: #000000;
 }
 .swatch.swatch--brand--gray-5 {
   background-color: #eeeeee;
-  color: contrast(#eeeeee, #ffffff, #000000);
+  color: #000000;
 }
 .swatch.swatch--brand--gray-6 {
   background-color: #dfe1e3;
-  color: contrast(#dfe1e3, #ffffff, #000000);
+  color: #000000;
 }
 .swatch.swatch--brand--gray-7 {
   background-color: #f8f8f8;
-  color: contrast(#f8f8f8, #ffffff, #000000);
+  color: #000000;
 }
 /* Brand colours
 */

@@ -4,163 +4,9 @@
  * Defines the colors we will use across the site.
  * This is our palette, which is used within _variables.scss and elsewhere.
  */
-/***************************************************************************
- * COLORS
- */
-/***************************************************************************
- * PRIMARY
- */
-/***************************************************************************
- * STATE COLORS.
- * Used for Alerts, Media, States and form field validation states.
- */
-/***************************************************************************
- * PRIORITY COLORS.
- * Used for Media, Priorities.
- */
-/***************************************************************************
- * HEADERS. h1, h2, etc.
- */
-/**
- * TYPE
- *
- * Styles for basic type-related styles. Headings, paragraphs, etc.
- *
- * When we use h1, h2 etc within other elements we'll probably need to
- * give them a class and assign specific sizes, margins etc to that
- * particular usage.
- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.3;
-  color: #253460;
-  margin-top: 12.5px;
-  margin-bottom: 25px;
-  font-weight: 700;
-}
-h1 {
-  font-size: 36px;
-  margin-top: 37.5px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-h4 {
-  font-size: 20px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 16px;
-}
-h1 + h2,
-h2 + h3,
-h4 + h5,
-h5 + h6 {
-  margin-top: -20px;
-}
-h3 + h4 {
-  margin-top: -15px;
-}
-p {
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 400;
-  margin: 0 0 1em 0;
-}
-b,
-strong {
-  font-weight: 600;
-}
-a {
-  color: #253460;
-  text-decoration: underline;
-}
-a:hover,
-a:focus {
-  color: #253460;
-}
-a:active {
-  color: #034ea2;
-}
-a:visited {
-  color: #253460;
-}
-hr {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-}
-/**
- * VARIABLES.
- *
- * All non-color variables.
- */
-/***************************************************************************
- * TEXT SIZES
- */
-/***************************************************************************
- * FONT WEIGHTS
- */
-/***************************************************************************
- * LINE HEIGHTS
- */
-/* eg, 20px when font size is 14px */
-/***************************************************************************
- * LINKS
- */
-/****************************************************************************
- * TABLES.
- */
-/***************************************************************************
- * PANELS
- */
-/***************************************************************************
- * FORMS
- */
-/***************************************************************************
- * PADDED BOXES.
- * Used for shaded boxes of various kinds.
- * Usually, use the .box class and modifications like .box--1, etc.
- */
-/***************************************************************************
- * REVEALERS
- */
-/***************************************************************************
- * BADGES.
- */
-/***************************************************************************
- * MENUS.
- */
-/***************************************************************************
- * LETTERS.
- */
-/***************************************************************************
- * BANNER
- * The top of page stripes.
- */
-/***************************************************************************
- * FOOTER
- */
-/* Base */
-/**
- * Style Guide
- *
- * Basic utility classes.
- * And one or two odds and ends that coule be moved elsewhere at some point.
- */
+
 body {
-  padding-top: 0px;
+  padding: 0;
   font-family: 'Open Sans', sans-serif;
   background-color: @white;
 }
@@ -236,61 +82,61 @@ ul li {
 */
 .swatch.swatch--brand--beta-red {
   background-color: @beta-red;
-  color: contrast(@beta-red, @white, @gray-1);
+  color: @white;
 }
 .swatch.swatch--brand--beta-orange {
   background-color: @beta-orange;
-  color: contrast(@beta-orange, @white, @gray-1);
+  color: @black;
 }
 .swatch.swatch--brand--beta-yellow {
   background-color: @beta-yellow;
-  color: contrast(@beta-yellow, @white, @gray-1);
+  color: @black;
 }
 .swatch.swatch--brand--beta-green {
   background-color: @beta-green;
-  color: contrast(@beta-green, @white, @gray-1);
+  color: @white;
 }
 .swatch.swatch--brand--beta-light-blue {
   background-color: @beta-blue-light;
-  color: contrast(@beta-blue-light, @white, @gray-1);
+  color: @black;
 }
 .swatch.swatch--brand--beta-aqua {
   background-color: @beta-aqua;
-  color: contrast(@beta-aqua, @white, @gray-1);
+  color: @black;
 }
 /* Mono colours 
 */
 .swatch.swatch--brand--gray-0 {
   background-color: @gray-0;
-  color: contrast(@gray-0, @white, @black);
+  color: @white;
 }
 .swatch.swatch--brand--gray-1 {
   background-color: @gray-1;
-  color: contrast(@gray-1, @white, @black);
+  color: @white;
 }
 .swatch.swatch--brand--gray-2 {
   background-color: @gray-2;
-  color: contrast(@gray-2, @white, @black);
+  color: @white;
 }
 .swatch.swatch--brand--gray-3 {
   background-color: @gray-3;
-  color: contrast(@gray-3, @white, @black);
+  color: @black;
 }
 .swatch.swatch--brand--gray-4 {
   background-color: @gray-4;
-  color: contrast(@gray-4, @white, @black);
+  color: @black;
 }
 .swatch.swatch--brand--gray-5 {
   background-color: @gray-5;
-  color: contrast(@gray-5, @white, @black);
+  color: @black;
 }
 .swatch.swatch--brand--gray-6 {
   background-color: @gray-6;
-  color: contrast(@gray-6, @white, @black);
+  color: @black;
 }
 .swatch.swatch--brand--gray-7 {
   background-color: @gray-7;
-  color: contrast(@gray-7, @white, @black);
+  color: @black;
 }
 
 /* Brand colours
