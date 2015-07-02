@@ -6,25 +6,36 @@
 
 .beta-navigation {
     padding: calculated(@box-padding-vertical * 0.8);
-    h1 {
-        font-size: @font-size-base;
-        background-color: @beta-blue-light;
-        color: @heritage-blue;
-        padding: 0.2em 0.6em 0.4em 0.6em;
-        border-bottom: 0.1em solid @white;
-    }
     ul {
-        background-color: @beta-blue-light-tint;
+        background-color: @white;
         color: @text-color;
         list-style: none;
-        padding-left: 0;
+        padding: 0;
     }
     li {
         font-size: @font-size-small;
-        padding: 0.2em 0.6em 0.4em 0.6em;
-        border-bottom: 0.1em solid @white;
+        padding: 0.4em 0.6em 0.6em 0.6em;
+        margin: 0;
+        border-bottom: 0.1em solid @beta-blue-light;
     }     
     li:last-child {
        border-bottom: none;
     }
+    li.current {
+        font-size: @font-size-small;
+        font-weight: @font-weight-bold;
+        background-color: @beta-blue-light-tint;
+        padding: 0.4em 0.6em 0.6em 0.6em;
+        margin: 0;
+        border-bottom: 0.1em solid @beta-blue-light;
+    }     
+    li.title {
+        font-size: @font-size-small;
+        font-weight: @font-weight-bold;
+        background-color: @beta-blue-light;
+        color: @heritage-blue;
+        padding: 0.7em 0.6em 0.9em 0.6em;
+        margin: 0;
+        border-bottom: 0.1em solid @white;
+    }     
 }

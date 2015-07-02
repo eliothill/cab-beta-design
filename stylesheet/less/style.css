@@ -471,6 +471,7 @@ h6 {
 }
 h1 {
   font-size: 2.3em;
+  font-weight: 800;
   color: #004b88;
 }
 h2 {
@@ -856,26 +857,55 @@ blockquote p.lighten {
 .beta-navigation {
   padding: calculated(8px);
 }
-.beta-navigation h1 {
-  font-size: 1em;
-  background-color: #a5bddc;
-  color: #004b88;
-  padding: 0.2em 0.6em 0.4em 0.6em;
-  border-bottom: 0.1em solid #ffffff;
-}
 .beta-navigation ul {
-  background-color: #dce5f1;
+  background-color: #ffffff;
   color: #191926;
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 .beta-navigation li {
-  font-size: 0.85em;
-  padding: 0.2em 0.6em 0.4em 0.6em;
-  border-bottom: 0.1em solid #ffffff;
+  font-size: 0.875em;
+  padding: 0.4em 0.6em 0.6em 0.6em;
+  margin: 0;
+  border-bottom: 0.1em solid #a5bddc;
 }
 .beta-navigation li:last-child {
   border-bottom: none;
+}
+.beta-navigation li.current {
+  font-size: 0.875em;
+  font-weight: 600;
+  background-color: #dce5f1;
+  padding: 0.4em 0.6em 0.6em 0.6em;
+  margin: 0;
+  border-bottom: 0.1em solid #a5bddc;
+}
+.beta-navigation li.title {
+  font-size: 0.875em;
+  font-weight: 600;
+  background-color: #a5bddc;
+  color: #004b88;
+  padding: 0.7em 0.6em 0.9em 0.6em;
+  margin: 0;
+  border-bottom: 0.1em solid #ffffff;
+}
+/**
+ * Breadcrumb.
+ *
+ * Beta breadcrumb amends.
+ * Functional changes to be made in 
+ */
+.breadcrumb {
+  background-color: #ffffff;
+  padding: 0;
+}
+.breadcrumb p {
+  font-size: 1em;
+  color: #a5bddc;
+}
+.breadcrumb p a {
+  padding: 0em 0.5em;
+  color: #191926;
 }
 .container {
   margin-right: auto;
