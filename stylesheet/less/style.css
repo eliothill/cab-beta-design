@@ -909,6 +909,39 @@ blockquote p.lighten {
 .dap-panel--adviser .dap-panel__subtitle {
   color: #191926;
 }
+/************************************************************************
+ * Side-panels.
+ */
+.dap-panel--side__blue {
+  background-color: #f2f2f2;
+  border-top: 4px solid #004b88;
+}
+.dap-panel--side__blue .dap-panel__title {
+  color: #004b88;
+}
+.dap-panel--side__blue .dap-panel__subtitle {
+  color: #191926;
+}
+.dap-panel--side__yellow {
+  background-color: #f2f2f2;
+  border-top: 4px solid #ffbf47;
+}
+.dap-panel--side__yellow .dap-panel__title {
+  color: #004b88;
+}
+.dap-panel--side__yellow .dap-panel__subtitle {
+  color: #191926;
+}
+.dap-panel--side__aqua {
+  background-color: #f2f2f2;
+  border-top: 4px solid #81cec6;
+}
+.dap-panel--side__aqua .dap-panel__title {
+  color: #004b88;
+}
+.dap-panel--side__aqua .dap-panel__subtitle {
+  color: #191926;
+}
 /***************************************************************************
  * Page status
  * Badge

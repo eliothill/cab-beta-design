@@ -98,13 +98,57 @@
         color: @text-color;
     }
 
-}/************************************************************************
+}
+/************************************************************************
  * Adviser box - extending to style the adviser only content.
  */
 
 .dap-panel--adviser {
     background-color: @beta-yellow-light;
     border-left: 4px solid @beta-yellow;
+
+    .dap-panel__title {
+        color: @heritage-blue;
+    }
+
+    .dap-panel__subtitle {
+        color: @text-color;
+    }
+
+}
+/************************************************************************
+ * Side-panels.
+ */
+.dap-panel--side__blue {
+    background-color: lighten(@gray-4, 15%);
+    border-top: 4px solid @heritage-blue;
+
+    .dap-panel__title {
+        color: @heritage-blue;
+    }
+
+    .dap-panel__subtitle {
+        color: @text-color;
+    }
+
+}
+
+.dap-panel--side__yellow {
+    background-color: lighten(@gray-4, 15%);
+    border-top: 4px solid @beta-yellow;
+
+    .dap-panel__title {
+        color: @heritage-blue;
+    }
+
+    .dap-panel__subtitle {
+        color: @text-color;
+    }
+}
+
+.dap-panel--side__aqua {
+    background-color: lighten(@gray-4, 15%);
+    border-top: 4px solid @beta-aqua;
 
     .dap-panel__title {
         color: @heritage-blue;
