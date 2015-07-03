@@ -829,20 +829,34 @@ blockquote p.lighten {
  * Things within each panel.
  */
 .dap-panel__title {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 700;
   color: #191926;
   margin: 0 0 0.7em 0;
   line-height: 1.3;
 }
 .dap-panel__subtitle {
-  font-size: 1.2em;
+  font-size: 1em;
+  font-weight: 700;
   margin: 0 0 0.7em 0;
 }
 /************************************************************************
  * Variations on panel styling.
  * Extend dap-panel standards
  */
+/************************************************************************
+ * Base – the unstyled panel example (assuming we can use a white background on the content page.
+ */
+.dap-panel--base {
+  background-color: #ffffff;
+  border: 1px solid #a5bddc;
+}
+.dap-panel--base .dap-panel__title {
+  color: #191926;
+}
+.dap-panel--base .dap-panel__subtitle {
+  color: #191926;
+}
 /************************************************************************
  * Crucial – this is for only the most important mandatory tasks, we must use this sparingly.
  */
@@ -870,16 +884,29 @@ blockquote p.lighten {
   color: #191926;
 }
 /************************************************************************
- * Adviser box - extending to style the adviser only content.
+ * Progress panel - for instructional information, primarily used for 'Next stages'.
  */
-.dap-panel--important {
-  background-color: #eef7ff;
-  border: 1px solid #004b88;
+.dap-panel--progress {
+  background-color: #a6dcd7;
+  border-left: 4px solid #81cec6;
 }
-.dap-panel--important .dap-panel__title {
+.dap-panel--progress .dap-panel__title {
   color: #004b88;
 }
-.dap-panel--important .dap-panel__subtitle {
+.dap-panel--progress .dap-panel__subtitle {
+  color: #191926;
+}
+/************************************************************************
+ * Adviser box - extending to style the adviser only content.
+ */
+.dap-panel--adviser {
+  background-color: #ffebc6;
+  border-left: 4px solid #ffbf47;
+}
+.dap-panel--adviser .dap-panel__title {
+  color: #004b88;
+}
+.dap-panel--adviser .dap-panel__subtitle {
   color: #191926;
 }
 /***************************************************************************
