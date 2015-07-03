@@ -547,12 +547,12 @@ body {
   float: right;
 }
 .row {
-  margin-bottom: 15px;
+  margin-bottom: 1.125em;
 }
 .row--white {
   background-color: #ffffff;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 1.5em;
+  margin-bottom: 1.125em;
   padding: 2em 2em 0 2em;
 }
 ul.navbar-nav li {
@@ -794,6 +794,73 @@ blockquote {
 blockquote p.lighten {
   color: #999999;
 }
+/**
+ * Panels.
+ *
+ * These are the functional boxes used for callouts and indicators 
+ *
+ */
+.dap-panel {
+  margin-bottom: 0.75em;
+  padding: 0.8999999999999999em;
+}
+/**
+ * Things within each panel.
+ */
+.dap-panel__title {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #191926;
+  margin: 0 0 0.7em 0;
+  line-height: 1.3;
+}
+.dap-panel__subtitle {
+  font-size: 1.2em;
+  margin: 0 0 0.7em 0;
+}
+/************************************************************************
+ * Variations on panel styling.
+ * Extend dap-panel standards
+ */
+/************************************************************************
+ * Crucial – this is for only the most important mandatory tasks, we must use this sparingly.
+ */
+.dap-panel--crucial {
+  background-color: #fcdbdf;
+  border: 1px solid #b10e1e;
+}
+.dap-panel--crucial .dap-panel__title {
+  color: #b10e1e;
+}
+.dap-panel--crucial .dap-panel__subtitle {
+  color: #191926;
+}
+/************************************************************************
+ * Important – these are for generally important actions clients need to take but are not mandatory.
+ */
+.dap-panel--important {
+  background-color: #eef7ff;
+  border: 1px solid #004b88;
+}
+.dap-panel--important .dap-panel__title {
+  color: #004b88;
+}
+.dap-panel--important .dap-panel__subtitle {
+  color: #191926;
+}
+/************************************************************************
+ * Adviser box - extending to style the adviser only content.
+ */
+.dap-panel--important {
+  background-color: #eef7ff;
+  border: 1px solid #004b88;
+}
+.dap-panel--important .dap-panel__title {
+  color: #004b88;
+}
+.dap-panel--important .dap-panel__subtitle {
+  color: #191926;
+}
 /***************************************************************************
  * Page status
  * Badge
@@ -834,7 +901,7 @@ blockquote p.lighten {
  * Beta sidebar navigation for content pages.
  */
 .beta-navigation {
-  padding: calculated(8px);
+  padding: calculated(0.6000000000000001em);
 }
 .beta-navigation ul {
   background-color: #ffffff;

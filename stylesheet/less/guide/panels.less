@@ -1,0 +1,84 @@
+/**
+ * Panels.
+ *
+ * These are the functional boxes used for callouts and indicators 
+ *
+ */
+
+.dap-panel {
+    margin-bottom: 0.75em;
+    padding: (@box-padding-vertical * 1.2);
+}
+
+/**
+ * Things within each panel.
+ */
+.dap-panel__title {
+    font-size: @font-size-large;
+    font-weight: @font-weight-bolder;
+    color: @text-color;
+    margin: 0 0 (@paragraph-margin-bottom * 0.7) 0;
+    line-height: @line-height-large;
+}
+
+.dap-panel__subtitle {
+    font-size: @font-size-medium;
+    margin: 0 0 (@paragraph-margin-bottom * 0.7) 0;
+}
+
+
+/************************************************************************
+ * Variations on panel styling.
+ * Extend dap-panel standards
+ */
+
+/************************************************************************
+ * Crucial – this is for only the most important mandatory tasks, we must use this sparingly.
+ */
+
+.dap-panel--crucial {
+    background-color: lighten(@beta-red, 55%);
+    border: 1px solid @beta-red;
+
+    .dap-panel__title {
+        color: @beta-red;
+    }
+
+    .dap-panel__subtitle {
+        color: @text-color;
+    }
+}
+/************************************************************************
+ * Important – these are for generally important actions clients need to take but are not mandatory.
+ */
+
+.dap-panel--important {
+    background-color: lighten(@heritage-blue, 70%);
+    border: 1px solid @heritage-blue;
+
+    .dap-panel__title {
+        color: @heritage-blue;
+    }
+
+    .dap-panel__subtitle {
+        color: @text-color;
+    }
+
+}
+/************************************************************************
+ * Adviser box - extending to style the adviser only content.
+ */
+
+.dap-panel--important {
+    background-color: lighten(@heritage-blue, 70%);
+    border: 1px solid @heritage-blue;
+
+    .dap-panel__title {
+        color: @heritage-blue;
+    }
+
+    .dap-panel__subtitle {
+        color: @text-color;
+    }
+
+}
