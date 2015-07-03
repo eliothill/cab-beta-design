@@ -1,0 +1,25 @@
+{
+  "name": "cab-beta-design",
+  "version": "0.0.0",
+  "description": "What is it? =========",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eliothill/cab-beta-design.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliothill/cab-beta-design/issues"
+  },
+  "homepage": "https://github.com/eliothill/cab-beta-design",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-less": "^3.0.3",
+    "gulp-sourcemaps": "^1.5.2"
+  }
+}
