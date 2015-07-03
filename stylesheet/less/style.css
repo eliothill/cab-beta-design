@@ -1001,6 +1001,20 @@ blockquote p.lighten {
   padding: 0em 0.5em;
   color: #191926;
 }
+/**
+ * Contents page.
+ *
+ * Probably won't need these  but just as a visual compendium of styles it's included :P 
+ *
+ */
+.dap-contents-block {
+  border-bottom: 1px solid #cccccc;
+  padding: 0em 0em 1em 0em;
+  margin: 1em 0em;
+}
+.dap-contents-block h2 {
+  margin-top: 0;
+}
 .container {
   margin-right: auto;
   margin-left: auto;
