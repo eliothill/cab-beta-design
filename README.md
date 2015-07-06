@@ -5,10 +5,6 @@ What is it?
 
 The LESS stylesheets to be implimented on the beta templates for Citizens Advice.
 
-These files can be viewed at:
-http://eliothill.github.io/cab-boot/
-
-
 How to use it
 =========
 
