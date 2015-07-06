@@ -1,4 +1,4 @@
-# Citizens Advice Alpha template style for CMS
+# Citizens Advice Beta LESS styling for CMS
 
 What is it?
 =========
