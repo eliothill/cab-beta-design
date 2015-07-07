@@ -530,6 +530,52 @@ hr {
   border: 0;
   border-top: 1px solid #cccccc;
 }
+/**
+ * EXTENT SWITCHER.
+ *
+ * Beta switcher for changing extents.
+ */
+.beta-extent-switcher {
+  padding: 0.5em;
+  background-color: #ffffff;
+  margin-bottom: 0.5em;
+  border: #a5bddc 1px solid;
+  overflow: visible;
+  height: 6.5em;
+}
+.styled-select {
+  width: 80%;
+  height: 2em;
+  overflow: hidden;
+  float: left;
+  background: #ffffff;
+  margin-right: .5em;
+  border: 1px solid #cccccc;
+}
+.styled-select select {
+  background: transparent;
+  width: 100%;
+  padding: 5px;
+  font-size: 1em;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+}
+input[type=submit],
+input[type=reset],
+input[type=button],
+.button {
+  border: none;
+  padding: 0;
+  float: right;
+  padding: .4em .6em;
+  border-radius: .2em;
+  background-color: #004b88;
+  color: white;
+  font-weight: 600;
+}
 /* Base */
 /**
  * Style Guide
@@ -962,12 +1008,6 @@ blockquote p.lighten {
   padding: 0.5em;
   margin-right: 0.5em;
 }
-.breadcrumb {
-  background-color: #ffffff;
-}
-.breadcrumb p {
-  font-size: 0.9em;
-}
 @media (max-width: 767px) {
   .status p {
     font-size: 0.8em;
@@ -1003,6 +1043,14 @@ blockquote p.lighten {
   font-size: 0.875em;
   font-weight: 600;
   background-color: #dce5f1;
+  padding: 0.4em 0.6em 0.6em 0.6em;
+  margin: 0;
+  border-bottom: 0.1em solid #a5bddc;
+}
+.beta-navigation li.hover {
+  font-size: 0.875em;
+  font-weight: 600;
+  background-color: #dfe1e3;
   padding: 0.4em 0.6em 0.6em 0.6em;
   margin: 0;
   border-bottom: 0.1em solid #a5bddc;
