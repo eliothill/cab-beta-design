@@ -956,6 +956,19 @@ blockquote p.lighten {
   color: #191926;
 }
 /************************************************************************
+ * Example box - extending to style the adviser only content.
+ */
+.dap-panel--example {
+  background-color: #ffffff;
+  border-left: 4px solid #cccccc;
+}
+.dap-panel--example .dap-panel__title {
+  color: #999999;
+}
+.dap-panel--example .dap-panel__subtitle {
+  color: #191926;
+}
+/************************************************************************
  * Side-panels.
  */
 .dap-panel--side__blue {
