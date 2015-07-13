@@ -619,7 +619,7 @@ hr {
 }
 /* Second Level */
 #beta-dap-menu-accordion ul ul li a {
-  padding: 0.875em;
+  padding: 0.875em 2em 0.875em 0.875em;
   cursor: pointer;
   z-index: 2;
   font-size: 0.875em;
