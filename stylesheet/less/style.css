@@ -534,6 +534,7 @@ hr {
   width: 100%;
   font-family: Open Sans, sans-serif;
   color: #ffffff;
+  margin-bottom: 2em;
 }
 #beta-dap-menu-accordion ul ul {
   display: none;
