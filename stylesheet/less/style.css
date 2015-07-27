@@ -766,6 +766,20 @@ ul li {
   padding: 10px 0 8px 0;
   border-bottom: 1px solid #cccccc;
 }
+.beta-dap-cover {
+  margin: -15px 0 2em 0;
+  padding: 10px 0 20px 0;
+  background-color: #004b88;
+  min-height: 15em;
+}
+.beta-dap-cover h1 {
+  color: #fcbb69;
+}
+.beta-dap-cover h2,
+.beta-dap-cover p,
+.beta-dap-cover a {
+  color: #ffffff;
+}
 .alpha-badge {
   font-weight: 700;
   color: #eff3f3;
