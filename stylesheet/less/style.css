@@ -534,7 +534,7 @@ hr {
   width: 100%;
   font-family: Open Sans, sans-serif;
   color: #ffffff;
-  margin-bottom: 2em;
+  margin-bottom: 2em !important;
 }
 #beta-dap-menu-accordion ul ul {
   display: none;
@@ -618,6 +618,10 @@ hr {
 #beta-dap-menu-accordion ul > li.has-sub.open > a:after {
   display: none;
 }
+#beta-dap-menu-accordion > ul > li.has-sub.open > a {
+  color: #ffffff;
+  background-color: #004b88 !important;
+}
 /* Second Level */
 #beta-dap-menu-accordion ul ul li a {
   padding: 0.875em 2em 0.875em 0.875em;
@@ -627,7 +631,9 @@ hr {
   line-height: 1.5em;
   text-decoration: none;
   color: #004b88;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #a5bddc;
+  border-left: 1px solid #a5bddc;
+  border-right: 1px solid #a5bddc;
   -webkit-transition: color .2s ease;
   -o-transition: color .2s ease;
   transition: color .2s ease;
@@ -770,16 +776,16 @@ ul li {
 .beta-dap-cover {
   margin: -15px 0 2em 0;
   padding: 10px 0 20px 0;
-  background-color: #004b88;
+  background-color: #eeeeee;
   min-height: 15em;
 }
 .beta-dap-cover h1 {
-  color: #fcbb69;
+  color: #004b88;
 }
 .beta-dap-cover h2,
 .beta-dap-cover p,
 .beta-dap-cover a {
-  color: #ffffff;
+  color: #333333;
 }
 .alpha-badge {
   font-weight: 700;

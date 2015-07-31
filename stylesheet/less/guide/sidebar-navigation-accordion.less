@@ -2,7 +2,7 @@
     width: 100%;
     font-family: Open Sans, sans-serif;
     color: @white;
-    margin-bottom: 2em;
+    margin-bottom: 2em !important;
     ul ul {
       display: none;
     }
@@ -88,6 +88,10 @@
 #beta-dap-menu-accordion ul > li.has-sub.open > a:after {
   display: none;
 }
+#beta-dap-menu-accordion > ul > li.has-sub.open > a{
+  color: @white;
+  background-color: @heritage-blue !important;
+}
 
 /* Second Level */
 #beta-dap-menu-accordion ul ul li a {
@@ -98,7 +102,9 @@
   line-height: 1.5em;
   text-decoration: none;
   color: @heritage-blue;
-  border-bottom: 1px solid @gray-5;
+  border-bottom: 1px solid @beta-blue-light;
+  border-left: 1px solid @beta-blue-light;
+  border-right: 1px solid @beta-blue-light;
   -webkit-transition: color .2s ease;
   -o-transition: color .2s ease;
   transition: color .2s ease;
